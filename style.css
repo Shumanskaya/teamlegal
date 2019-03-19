@@ -1,13 +1,16 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,300i,400");
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro");
 /*светлый фон*/
 /*темный фон*/
 /*светло-теный фон*/
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Source Serif Pro', serif;
   color: black; }
+
+a {
+  text-decoration: none; }
 
 body {
   background-color: #ffffff; }
@@ -44,7 +47,8 @@ body {
   width: 20%;
   padding: 10px 20px;
   color: black;
-  border: 4px solid #71eee1; }
+  border: 4px solid #71eee1;
+  font-size: 16px; }
 
 .header-top-menu__items {
   width: 100%;
@@ -486,7 +490,8 @@ ellipse {
 
 .footer__phone-desc,
 .footer__mail-desc {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  display: block; }
 
 .footer__mail-desc--link {
   text-decoration: none;
@@ -528,7 +533,8 @@ ellipse {
     display: none;
     flex-direction: column;
     padding-top: 30px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    background-color: white; }
 
   .header-top-menu__mobile {
     display: block;
@@ -542,8 +548,7 @@ ellipse {
     top: 0;
     right: 0;
     width: auto;
-    background-color: white;
-    z-index: 2222; }
+    background-color: white; }
 
   .introduction {
     padding-top: 10vh;
