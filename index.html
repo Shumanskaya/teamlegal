@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./node_modules/sass/sass.js"></script>
     <script src="my.js"></script>
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="icon" type="image/png" href="svg/logo1.png" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>TEAM Legal</title>
 </head>
 
 <body>
 
-    <header class="header-top">
+    <header class="header-top" id='header'>
         <div class="header-top__flex-wr">
             <div class="header-top-menu">
                 <ul class="header-top-menu__items header-top-menu__items--js" id="menuMobile">
@@ -60,13 +60,15 @@
 
     <main class="legal">
 
-        <div class="introduction">
+        <div class="introduction" id='introduction'>
             <div class="introduction__flex-wr">
                 <div class="legal-logo">
-                    <!-- <img class="header-top-logo__image" src="" alt=""> -->
-                    <p class="legal-logo__image">ЛОГОТИП<br>
-                        ВАШЕЙ КОМПАНИИ</p>
-                    <p class="legal__title">team legal</p>
+                    <div class="header-top-logo__image">
+                        <img class="header-top-logo__image-svg" src="svg/logo2.2.svg" alt="">
+                    </div>
+                    <div class="legal__title">
+                        <p class="legal__title-desc">team legal</p>
+                    </div>
                 </div>
                 <p class="introduction__title">
                     Правовые решения для киберспорта
@@ -447,6 +449,10 @@
                 </div>
             </div>
         </div>
+
+        <div class="legal-scroll">
+            <img class="legal-scroll__image" src="./svg/arrTop.svg" alt="">
+        </div>
     </main>
 
     <footer class="footer" id="contact">
@@ -477,4 +483,6 @@
     </footer>
 </body>
 
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 </html>

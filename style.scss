@@ -50,6 +50,20 @@ body {
     flex-wrap: wrap;
 }
 
+.legal-scroll {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    display: none;
+}
+
+.legal-scroll__image {
+    width: 100%;
+    height: auto;
+}
+
 .header-top-menu {
     width: 100%;
     position: fixed;
@@ -81,6 +95,7 @@ body {
     display: flex;
     justify-content: space-around;
     border-bottom: 4px solid $colorHR;
+    background-color: white;
 }
 
 .header-top-menu__item {
@@ -98,7 +113,7 @@ body {
     height: 100%;
     width: 105%;
     top: 0;
-    left: -1vw;
+    left: -10px;
     border-left: 4px solid $colorHR;
     /* border-bottom: 4px solid transparent; */
     transition: border-bottom ease 0.5s;
@@ -125,11 +140,20 @@ body {
     background-color: $colorHR;
 }
 
+.header-top-logo__image {
+    width: 50%;
+    text-align: center;
+}
+
+.header-top-logo__image-svg {
+    width: 50%;
+}
+
 /*INTRODUCTION*/
 
 .introduction {
-    height: 100vh;
-    padding-top: 20vh;
+    // height: 100vh;
+    padding-top: 18vh;
 }
 
 .introduction__flex-wr {
@@ -152,6 +176,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12vh;
+    align-items: center;
 }
 
 .legal-logo__image {
@@ -166,10 +191,13 @@ body {
     text-align: left;
     padding: 10px;
     text-transform: uppercase;
+}
+
+.legal__title-desc {
     position: relative;
 }
 
-.legal__title::after {
+.legal__title-desc::after {
     content: '';
     position: absolute;
     height: 10px;
@@ -209,7 +237,7 @@ body {
 
 .about {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -220,7 +248,8 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column; 
-    height: 100%;
+    padding: 100px 0;
+    // height: 100%;
 }
 
 .about__content {
@@ -299,7 +328,7 @@ body {
 
 .players {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -328,7 +357,7 @@ body {
 
 .commands {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -366,7 +395,7 @@ body {
 
 .operator {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -395,7 +424,7 @@ body {
 
 .talent {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -429,7 +458,7 @@ body {
 
 .studio {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -458,7 +487,7 @@ body {
 
 .internet {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -492,7 +521,7 @@ body {
 
 .developers {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -521,7 +550,7 @@ body {
 
 .backoffice {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding-top: 10vh;
 }
 
@@ -573,7 +602,7 @@ ellipse {
 
 .footer {
     width: 100%;
-    height: 80vh;
+    // height: 80vh;
     padding-top: 100px;
     position: relative;
 }
@@ -636,8 +665,6 @@ ellipse {
 
 
 .footer__copyright {
-    position: absolute;
-    bottom: 0;
     background-color: $colorHR;
     padding: 2rem 0;
     width: 100%;
@@ -659,7 +686,6 @@ ellipse {
         flex-direction: column;
         padding-top: 30px;
         padding-left: 20px;
-        background-color: white;
     }
 
     .header-top-menu__mobile {
@@ -676,7 +702,6 @@ ellipse {
         right: 0;
         width: auto;
         background-color: white;
-        // z-index: 2222;
     }
 
     .introduction {
@@ -690,17 +715,20 @@ ellipse {
 
     .legal-logo {
         flex-wrap: wrap;
-        margin-bottom: 5vh;
+        margin-bottom: 0;
+        align-items: center;
     }
 
     .legal-logo__image {
         width: 100%;
     }
 
-    .legal__title {
+    .header-top-logo__image {
         width: 100%;
-        text-align: center;
-        font-size: 3rem;
+    }
+
+    .legal__title {
+        display: none;
     }
 
     .legal__subtitle {
@@ -784,8 +812,6 @@ ellipse {
     .internet__icon,
     .developers__icon,
     .backoffice__icon {
-        // order: 1;
-        // width: 100%;
         display: none;
     }
 
