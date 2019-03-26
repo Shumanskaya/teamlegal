@@ -1,0 +1,421 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="my.js"></script>
+    <link rel="icon" type="image/png" href="svg/logo1.png" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TEAM Legal</title>
+</head>
+
+<body>
+
+    <header class="header-top anchor" id='header'>
+        <div class="header-top__flex-wr">
+            <div class="header-top-menu">
+                <ul class="header-top-menu__items header-top-menu__items--js" id="menuMobile">
+                    <a class="header-top-menu__item_link" href="#players">
+                        <li class="header-top-menu__item">{{menuPlay}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#commands">
+                        <li class="header-top-menu__item">{{menuCommand}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#operator">
+                        <li class="header-top-menu__item">{{menuOperator}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#talent">
+                        <li class="header-top-menu__item">{{menuTalent}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#studio">
+                        <li class="header-top-menu__item">{{menuStudio}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#internet">
+                        <li class="header-top-menu__item">{{menuInternet}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#developers">
+                        <li class="header-top-menu__item">{{menuDevelopers}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#backoffice">
+                        <li class="header-top-menu__item">{{menuBackOffice}}</li>
+                    </a>
+                    <a class="header-top-menu__item_link" href="#contact">
+                        <li class="header-top-menu__item">{{menuContacts}}</li>
+                    </a>
+                </ul>
+                <div class="header-top-menu-contact">
+                    <div class="lang-selector">
+                        <a class="lang-selector--link {{langClassRU}}" href="index.html">RU</a>
+                        <a class="lang-selector--link {{langClassENG}}" href="english.html">ENG</a>
+                    </div>
+                    <a href="tel:+74992319820" class="header-top-menu-contact__link">+7 499 231 98 20</a>
+                </div>
+                <div class="header-top-menu__mobile header-top-menu__mobile--js" id="buttonMenu">
+                    <div class="header-top-menu__mobile-item"></div>
+                    <div class="header-top-menu__mobile-item"></div>
+                    <div class="header-top-menu__mobile-item"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="legal">
+
+        <div class="introduction anchor" id='introduction'>
+            <div class="introduction__flex-wr">
+                <div class="legal-logo">
+                    <div class="header-top-logo__image">
+                        <img class="header-top-logo__image-svg" src="svg/logo2.2.svg" alt="">
+                    </div>
+                    <div class="legal__title">
+                        <p class="legal__title-desc">team legal</p>
+                    </div>
+                </div>
+                <p class="introduction__title">
+                    {{introductionTitle}}
+                </p>
+                <p class="introduction__subtitle">
+                    <span class="lergal-carriage"></span>
+                    {{introductionSubtitle}}
+                </p>
+            </div>
+        </div>
+
+        <div class="about anchor" id='about'>
+            <div class="about__flex-wr">
+                <div class="about__content">
+                    <p class="about__desc">{{aboutDesc}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="players anchor" id="players">
+            <div class="players__flex-wr">
+                <p class="legal__subtitle legal__subtitle--players">{{playersTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="players__icon">
+                    <object type="image/svg+xml" data="svg/players.svg">
+                        <img src="svg/players.svg">
+                    </object>
+                </div>
+                <div class="players__content">
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{playersContent1}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{playersContent2}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{playersContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{playersContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{playersContent5}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{playersContent6}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="commands anchor" id="commands">
+            <div class="commands__flex-wr">
+                <p class="legal__subtitle legal__subtitle--commands">{{commandsTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="commands__content">
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent1}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent2}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent5}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent6}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent7}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{commandsContent8}}</p>
+                    </div>
+                </div>
+                <div class="commands__icon">
+                    <object type="image/svg+xml" data="svg/commands.svg">
+                        <img src="svg/commands.svg">
+                    </object>
+                </div>
+            </div>
+        </div>
+
+        <div class="operator anchor" id="operator">
+            <div class="operator__flex-wr">
+                <p class="legal__subtitle legal__subtitle--operator">{{operatorTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="operator__icon">
+                    <object type="image/svg+xml" data="svg/operator.svg">
+                        <img src="svg/operator.svg">
+                    </object>
+                </div>
+                <div class="operator__content">
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{operatorContent1}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{operatorContent2}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{operatorContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{operatorContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{operatorContent5}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{operatorContent6}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{operatorContent7}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="talent anchor" id="talent">
+            <div class="talent__flex-wr">
+                <p class="legal__subtitle legal__subtitle--talent">{{talentTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="talent__content">
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{talentContent1}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{talentContent2}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{talentContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{talentContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{talentContent5}}</p>
+                    </div>
+                </div>
+                <div class="talent__icon">
+                    <object type="image/svg+xml" data="svg/talent.svg">
+                        <img src="svg/talent.svg">
+                    </object>
+                </div>
+            </div>
+        </div>
+
+        <div class="studio anchor" id="studio">
+            <div class="studio__flex-wr">
+                <p class="legal__subtitle legal__subtitle--studio">{{studioTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="studio__icon">
+                    <object type="image/svg+xml" data="svg/studio.svg">
+                        <img src="svg/studio.svg">
+                    </object>
+                </div>
+                <div class="studio__content">
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{studioContent1}}/p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{studioContent2}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{studioContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{studioContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{studioContent5}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{studioContent6}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="internet anchor" id="internet">
+            <div class="internet__flex-wr">
+                <p class="legal__subtitle--internet legal__subtitle">{{internetTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="internet__content">
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent1}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent2}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent5}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent6}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent7}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{internetContent8}}</p>
+                    </div>
+                </div>
+                <div class="internet__icon">
+                    <object type="image/svg+xml" data="svg/internet.svg">
+                        <img src="svg/internet.svg">
+                    </object>
+                </div>
+            </div>
+        </div>
+
+        <div class="developers anchor" id="developers">
+            <div class="developers__flex-wr">
+                <p class="legal__subtitle legal__subtitle--developers">{{developersTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="developers__icon">
+                    <object type="image/svg+xml" data="svg/developer.svg">
+                        <img src="svg/developer.svg">
+                    </object>
+                </div>
+                <div class="developers__content">
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent1}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent2}}/p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent5}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent6}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent7}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent8}}</p>
+                    </div>
+                    <div class="legal-item legal-item_right">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{developerContent9}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="backoffice anchor" id="backoffice">
+            <div class="backoffice__flex-wr">
+                <p class="legal__subtitle legal__subtitle--backoffice">{{backOfficeTitle}}<br>
+                <span class="{{whatWeDoClass}}">{{whatWeDo}}</span>
+                </p>
+                <div class="backoffice__content">
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent1}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent2}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent3}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent4}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent5}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent6}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent7}}</p>
+                    </div>
+                    <div class="legal-item legal-item_left">
+                        <p class="legal-item__desc"><span class="legal-dot"></span>{{backOfficeContent8}}</p>
+                    </div>
+                </div>
+                <div class="backoffice__icon">
+                    <object type="image/svg+xml" data="svg/backoffice.svg">
+                        <img src="svg/backoffice.svg">
+                    </object>
+                </div>
+            </div>
+        </div>
+
+        <div class="legal-scroll">
+            <img class="legal-scroll__image" src="./svg/arrTop.svg" alt="">
+        </div>
+    </main>
+
+    <footer class="footer anchor" id="contact">
+        <div class="footer__flex-wr">
+            <p class="legal__subtitle legal__subtitle--footer">{{contactTitle}}</p>
+            <div class="footer-content">
+                <div class="footer__phone">
+                    <a href="tel:+74992319820" class="footer__phone-desc"><i class="fas fa-phone"></i>+7 499 231 98
+                        20</a>
+                    <a href="tel:+79852319810" class="footer__phone-desc"><i class="fas fa-phone"></i>+7 985 231 98
+                        10</a>
+                </div>
+                <div class="footer__mail">
+                    <p class="footer__mail-desc"><i class="fas fa-envelope"></i><a href="#"
+                            class="footer__mail-desc--link">team.legal.esports@gmail.com</a></p>
+                </div>
+                <div class="footer__social">
+                    <i class="fab fa-instagram footer__social-icon"></i>
+                    <i class="fab fa-facebook-f footer__social-icon"></i>
+                    <i class="fab fa-vk footer__social-icon"></i>
+                    <i class="fab fa-twitter footer__social-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright-desc">TEAM LEGAL 2019</p>
+        </div>
+    </footer>
+</body>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+</html>

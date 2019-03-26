@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var href = $(this).attr('href');
         var posHref = $(href).position();
         e.preventDefault()
-        console.log(href)
-        console.log(posHref.top)
         $('body').animate({
             scrollTop: posHref.top
-        }, 1000)
+        }, 1000);
+        if ($('#menuMobile').css('display', 'flex') && $(window).width() < 1024) {
+            $('#menuMobile').css('display', 'none')
+        }
     })
 
 
@@ -37,4 +38,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
             scrollTop: 0
         }, 1000)
     })
+
 });

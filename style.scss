@@ -56,7 +56,27 @@ body {
     position: fixed;
     right: 3%;
     bottom: 10%;
+    z-index: 444;
     display: none;
+}
+
+.lang-selector {
+    color: $colorText;
+    cursor: pointer;
+}
+
+.lang-selector--link {
+    display: inline-block;
+    margin-right: 5px;
+    transition: color .5s ease;
+}
+
+.lang-selector--link:hover {
+    color: $colorHR;
+}
+
+.lang--active {
+    color: $colorHR;
 }
 
 .legal-scroll__image {
@@ -74,20 +94,27 @@ body {
     max-width: 1264px;
     right: 0;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .header-top-menu-contact {
-    padding: 10px 0 10px 10px;
+    width: 50%;
     text-align: right;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .header-top-menu-contact__link {
     font-weight: 600;
-    width: 20%;
-    padding: 10px 20px;
+    padding: 6px 20px;
     color: $colorText;
     border: 4px solid $colorHR;
     font-size: 16px;
+    margin-left: 20px;
 }
 
 .header-top-menu__items {
@@ -115,7 +142,6 @@ body {
     top: 0;
     left: -10px;
     border-left: 4px solid $colorHR;
-    /* border-bottom: 4px solid transparent; */
     transition: border-bottom ease 0.5s;
     cursor: pointer;
 }
@@ -193,6 +219,11 @@ body {
     text-transform: uppercase;
 }
 
+.legal__subtitle--sm {
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
 .legal__title-desc {
     position: relative;
 }
@@ -211,7 +242,6 @@ body {
     font-size: 4.5rem;
     margin-bottom: 32px;
     text-align: center;
-    // font-family: 'IBM Plex Mono', monospace;
 }
 
 .introduction__subtitle {
@@ -306,7 +336,7 @@ body {
     padding: 20px 0 0 0;
     border-bottom: 10px solid $colorHR;
     margin-bottom: 32px;
-    // font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     width: 71%;
 }
 
@@ -322,6 +352,10 @@ body {
     background-color: $colorHR;
     display: inline-block;
     margin-right: 10px;
+}
+
+.legal--height {
+    height: 100vh;
 }
 
 /* players */
@@ -602,7 +636,7 @@ ellipse {
 
 .footer {
     width: 100%;
-    // height: 80vh;
+    height: 80vh;
     padding-top: 100px;
     position: relative;
 }
@@ -668,6 +702,8 @@ ellipse {
     background-color: $colorHR;
     padding: 2rem 0;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer__copyright-desc {
@@ -686,6 +722,9 @@ ellipse {
         flex-direction: column;
         padding-top: 30px;
         padding-left: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .header-top-menu__mobile {
@@ -696,7 +735,7 @@ ellipse {
         z-index: 2222;
     }
 
-    .header-top-menu-contact__link {
+    .header-top-menu-contact {
         position: fixed;
         top: 0;
         right: 0;
@@ -789,7 +828,7 @@ ellipse {
     .backoffice,
     .footer {
         height: auto;
-        padding-top: 2vh;
+        padding-top: 3vh;
     }
 
     .players__subtitle,
