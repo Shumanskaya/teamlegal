@@ -347,6 +347,10 @@ body {
     font-size: 1.4rem;
 }
 
+.legal-item__desc--none {
+    display: none;
+}
+
 .legal-dot {
     width: 12px;
     height: 12px;
@@ -787,6 +791,10 @@ ellipse {
     .legal-item__desc {
         font-size: 1.1rem;
         margin: 0.5vh 0;
+    }
+
+    .legal-item__desc--none {
+        display: none;
     }
 
     .legal-item_right,

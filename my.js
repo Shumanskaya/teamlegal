@@ -11,6 +11,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }
 
+    $(window).resize(function() {
+        if ($(window).width() > 1024) {
+            $('.header-top-menu__items').css('display', 'flex')
+        }
+
+        else {
+            $('.header-top-menu__items').css('display', 'none')
+        }
+    })
+
     $('.header-top-menu__item_link').click(function (e) {
         var href = $(this).attr('href');
         var posHref = $(href).position();

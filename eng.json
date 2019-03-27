@@ -1,5 +1,6 @@
 {
     "langClassENG": "lang--active",
+    "classNone": "legal-item__desc--none", 
     "menuPlay": "Players",
     "menuCommand": "Teams",
     "menuOperator": "Tournament Operators",
