@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
 /*светлый фон*/
-$colorHR: #71eee1;
+// $colorHR: #71eee1;
+$colorHR: #69ffbb;
 $colorBody: #ffffff;
 $colorText: black;
 $colorIcon: black;
@@ -172,14 +173,14 @@ body {
 }
 
 .header-top-logo__image-svg {
-    width: 50%;
+    width: 30%;
 }
 
 /*INTRODUCTION*/
 
 .introduction {
     // height: 100vh;
-    padding-top: 18vh;
+    padding-top: 12vh;
 }
 
 .introduction__flex-wr {
@@ -201,7 +202,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12vh;
+    margin-bottom: 6vh;
     align-items: center;
 }
 
@@ -225,18 +226,18 @@ body {
 }
 
 .legal__title-desc {
-    position: relative;
+    width: 80%;
 }
 
-.legal__title-desc::after {
-    content: '';
-    position: absolute;
-    height: 10px;
-    width: 100%;
-    background-color: $colorHR;
-    bottom: 0;
-    left: 0;
-}
+// .legal__title-desc::after {
+//     content: '';
+//     position: absolute;
+//     height: 10px;
+//     width: 100%;
+//     background-color: $colorHR;
+//     bottom: 0;
+//     left: 0;
+// }
 
 .introduction__title {
     font-size: 4.5rem;
@@ -708,7 +709,7 @@ ellipse {
 
 .footer__copyright-desc {
     text-align: center;
-    color: $colorBody;
+    color: $colorText;
 }
 
 @media (max-width: 1024px) {
@@ -753,21 +754,29 @@ ellipse {
     }
 
     .legal-logo {
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         margin-bottom: 0;
         align-items: center;
     }
 
-    .legal-logo__image {
-        width: 100%;
+    // .legal-logo__image {
+    //     width: 100%;
+    // }
+
+    // .header-top-logo__image {
+    //     width: 100%;
+    // }
+
+    .header-top-logo__image-svg {
+        width: 70%;
     }
 
-    .header-top-logo__image {
-        width: 100%;
-    }
+    // .legal__title {
+    //     display: none;
+    // }
 
-    .legal__title {
-        display: none;
+    .legal__title-desc {
+        width: 100%;
     }
 
     .legal__subtitle {
