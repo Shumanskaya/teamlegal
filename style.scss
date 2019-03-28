@@ -760,7 +760,7 @@ ellipse {
 
     .legal-logo {
         // flex-wrap: wrap;
-        margin-bottom: 0;
+        margin-bottom: 2vh;
         align-items: center;
     }
 
@@ -890,6 +890,12 @@ ellipse {
 
     .footer__phone-desc, .footer__mail-desc {
         font-size: 1.1rem;
+    }
+
+    .footer__copyright {
+        position: static;
+        margin-top: 30px;
+        padding: 1.3rem 0;
     }
 
 }

@@ -597,7 +597,7 @@ ellipse {
     font-size: 3rem; }
 
   .legal-logo {
-    margin-bottom: 0;
+    margin-bottom: 2vh;
     align-items: center; }
 
   .header-top-logo__image-svg {
@@ -695,6 +695,11 @@ ellipse {
     margin-top: 2vh; }
 
   .footer__phone-desc, .footer__mail-desc {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+
+  .footer__copyright {
+    position: static;
+    margin-top: 30px;
+    padding: 1.3rem 0; } }
 
 /*# sourceMappingURL=style.css.map */
