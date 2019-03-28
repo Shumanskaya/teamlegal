@@ -1,6 +1,7 @@
 {
     "langClassRU": "lang--active",
     "menuPlay": "Игрокам",
+    "classNoneRU": "legal-item__desc--none",
     "menuCommand": "Командам",
     "menuOperator": "Турнирным операторам",
     "menuTalent": "Талантам",
